@@ -1,0 +1,1896 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-98cac35b43fab8341490a2623fdaa7b696bbaea87bccf8f485fd5cdb4996cd9b52bdb24709fb3bab0a0dcff4a29187d65028ee693d609ce5c0c3283c77a247a9.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-f84b09929e4d948a5727c0c312da25f89ded0439c0e17586ebfabd3b1a40c104c8ccd4f0b2dd5f44ec7c916d4e64a008a3916640b39e225d7afe17d2ae681591.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e47d4009cc4307d22206e8db8852fa7517c52b94b391b92cc430fb9c230b54d229f83125bda3eb53d7c9af78fb0330375393eebecc179adb754bf.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - redis/hiredis: Minimalistic C client for Redis &gt;= 1.2</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars1.githubusercontent.com/u/1529926?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="redis/hiredis" property="og:title" /><meta content="https://github.com/redis/hiredis" property="og:url" /><meta content="hiredis - Minimalistic C client for Redis &gt;= 1.2" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="9DDE:1DB68:C4E7BD:11A6F89:5A68476D" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="9DDE:1DB68:C4E7BD:11A6F89:5A68476D" name="octolytics-dimension-request_id" /><meta content="sea" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NWNkNmM1Yzg4MjYyZGJiZDZiYzJhZDFiMjZmMWZmMTIxMjY0MjEyYWQ3NGNjM2FhN2Y3ZTA4MjgyZTc3YmMzNXx7InJlbW90ZV9hZGRyZXNzIjoiMTE1LjE1Ni4xNDEuNDQiLCJyZXF1ZXN0X2lkIjoiOURERToxREI2ODpDNEU3QkQ6MTFBNkY4OTo1QTY4NDc2RCIsInRpbWVzdGFtcCI6MTUxNjc4MzQ2OSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS">
+
+  <meta name="html-safe-nonce" content="ecd0fccda0bc977a6628166d2110863d45517953">
+
+  <meta http-equiv="x-pjax-version" content="46af5e781c258f191337c975586a0291">
+  
+
+      <link href="https://github.com/redis/hiredis/commits/master.atom" rel="alternate" title="Recent Commits to hiredis:master" type="application/atom+xml">
+
+  <meta name="description" content="hiredis - Minimalistic C client for Redis &gt;= 1.2">
+  <meta name="go-import" content="github.com/redis/hiredis git https://github.com/redis/hiredis.git">
+
+  <meta content="1529926" name="octolytics-dimension-user_id" /><meta content="redis" name="octolytics-dimension-user_login" /><meta content="673267" name="octolytics-dimension-repository_id" /><meta content="redis/hiredis" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="673267" name="octolytics-dimension-repository_network_root_id" /><meta content="redis/hiredis" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/redis/hiredis" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/redis/hiredis/search" class="js-site-search-form" data-scoped-search-url="/redis/hiredis/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/redis/hiredis" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fredis%2Fhiredis" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fredis%2Fhiredis"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/redis/hiredis/watchers"
+     aria-label="265 users are watching this repository">
+    265
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fredis%2Fhiredis"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/redis/hiredis/stargazers"
+      aria-label="2836 users starred this repository">
+      2,836
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fredis%2Fhiredis"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/redis/hiredis/network" class="social-count"
+       aria-label="1005 users forked this repository">
+      1,005
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/redis" class="url fn" rel="author">redis</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/redis/hiredis" data-pjax="#js-repo-pjax-container">hiredis</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/redis/hiredis" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /redis/hiredis" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/redis/hiredis/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /redis/hiredis/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">48</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/redis/hiredis/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /redis/hiredis/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">6</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/redis/hiredis/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /redis/hiredis/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+    <a href="/redis/hiredis/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /redis/hiredis/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/redis/hiredis/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /redis/hiredis/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/site/dismiss_signup_prompt" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nHR9hETqy/mbr7MpwfhR6D2Ri2XpyEgJk09neZJR3gY2cy1DOdR9BosU5jPTp1JTym0EVkjF7uefjtSyuC3hHQ==" /></div>
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>
+          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 20 million developers working together to host and review code, manage projects, and build software together.</p>
+          <p class="pb-2">
+            <a class="btn btn-blue" href="/join?source=prompt-code" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="js-repo-meta-container">
+  <div class="repository-meta mb-0 mb-3 js-repo-meta-edit js-details-container ">
+    <div class="repository-meta-content col-11 mb-1">
+          <span class="col-11 text-gray-dark mr-2" itemprop="about">
+            Minimalistic C client for Redis &gt;= 1.2
+          </span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax href="/redis/hiredis/commits/master">
+              <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
+              <span class="num text-emphasized">
+                591
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax href="/redis/hiredis/branches">
+            <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <span class="num text-emphasized">
+              23
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a href="/redis/hiredis/releases">
+            <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+            <span class="num text-emphasized">
+              13
+            </span>
+            releases
+          </a>
+        </li>
+
+        <li>
+            <a href="/redis/hiredis/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4"/></svg>
+    <span class="num text-emphasized">
+      79
+    </span>
+    contributors
+</a>
+
+        </li>
+          <li>
+            <a href="/redis/hiredis/blob/master/COPYING">
+              <svg aria-hidden="true" class="octicon octicon-law" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+                BSD-3-Clause
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="/redis/hiredis/search?l=c"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#555555;"></span>
+                  <span class="lang">C</span>
+                  <span class="percent">94.9%</span>
+                </a>
+            </li>
+            <li>
+                <a href="/redis/hiredis/search?l=makefile"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#427819;"></span>
+                  <span class="lang">Makefile</span>
+                  <span class="percent">3.3%</span>
+                </a>
+            </li>
+            <li>
+                <a href="/redis/hiredis/search?l=c%2B%2B"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#f34b7d;"></span>
+                  <span class="lang">C++</span>
+                  <span class="percent">1.8%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="C 94.9%" style="width:94.9%; background-color:#555555;" itemprop="keywords">C</span>
+      <span class="language-color" aria-label="Makefile 3.3%" style="width:3.3%; background-color:#427819;" itemprop="keywords">Makefile</span>
+      <span class="language-color" aria-label="C++ 1.8%" style="width:1.8%; background-color:#f34b7d;" itemprop="keywords">C++</span>
+    </div>
+
+
+
+  <div class="file-navigation in-mid-page">
+
+    <details class="get-repo-select-menu js-menu-container float-right position-relative dropdown-details details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container ">
+        <div class="clone-options https-clone-options">
+
+          <h4 class="mb-1">
+            Clone with HTTPS
+            <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+              <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+            </a>
+          </h4>
+          <p class="mb-2 get-repo-decription-text">
+            Use Git or checkout with SVN using the web URL.
+          </p>
+
+          <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://github.com/redis/hiredis.git" aria-label="Clone this repository at https://github.com/redis/hiredis.git" readonly>
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg></button>
+  </div>
+</div>
+
+        </div>
+
+      <div class="mt-2">
+        
+<a href="/redis/hiredis/archive/master.zip"
+   class="btn btn-outline get-repo-btn
+"
+   rel="nofollow"
+   data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+      </div>
+    </div>
+  </div>
+</details>
+
+
+  <div class="BtnGroup float-right">
+
+    <a href="/redis/hiredis/find/master"
+      class="btn btn-sm empty-icon float-right BtnGroup-item"
+      data-pjax
+      data-hotkey="t"
+      data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/asyncdoc"
+               data-name="asyncdoc"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                asyncdoc
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/auto"
+               data-name="auto"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                auto
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/backwards-compatibility-macros"
+               data-name="backwards-compatibility-macros"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                backwards-compatibility-macros
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/buffer"
+               data-name="buffer"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                buffer
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/catch-error-buf-overflow"
+               data-name="catch-error-buf-overflow"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                catch-error-buf-overflow
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/changed-cygwin"
+               data-name="changed-cygwin"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                changed-cygwin
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/debug-flags"
+               data-name="debug-flags"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                debug-flags
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/develop"
+               data-name="develop"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                develop
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/fix-cygwin"
+               data-name="fix-cygwin"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                fix-cygwin
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/fmacros-fix"
+               data-name="fmacros-fix"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                fmacros-fix
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/ibm-aix-fix"
+               data-name="ibm-aix-fix"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                ibm-aix-fix
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/ipv6-unspec"
+               data-name="ipv6-unspec"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                ipv6-unspec
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/redis/hiredis/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/new-readme"
+               data-name="new-readme"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                new-readme
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/ng"
+               data-name="ng"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                ng
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/pr-438"
+               data-name="pr-438"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                pr-438
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/staging"
+               data-name="staging"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                staging
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/string-len-size_t"
+               data-name="string-len-size_t"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                string-len-size_t
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/try"
+               data-name="try"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                try
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/trying"
+               data-name="trying"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                trying
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/unstable"
+               data-name="unstable"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                unstable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/updated-sds"
+               data-name="updated-sds"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                updated-sds
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/redis/hiredis/tree/with-timeout"
+               data-name="with-timeout"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                with-timeout
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.13.3"
+              data-name="v0.13.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.13.3">
+                v0.13.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.13.2"
+              data-name="v0.13.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.13.2">
+                v0.13.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.13.1"
+              data-name="v0.13.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.13.1">
+                v0.13.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.13.0"
+              data-name="v0.13.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.13.0">
+                v0.13.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.12.1"
+              data-name="v0.12.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.12.1">
+                v0.12.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.12.0"
+              data-name="v0.12.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.12.0">
+                v0.12.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.11.0"
+              data-name="v0.11.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.11.0">
+                v0.11.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.10.1"
+              data-name="v0.10.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.10.1">
+                v0.10.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.10.0"
+              data-name="v0.10.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.10.0">
+                v0.10.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.9.2"
+              data-name="v0.9.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.9.2">
+                v0.9.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.9.1"
+              data-name="v0.9.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.9.1">
+                v0.9.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.9.0"
+              data-name="v0.9.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.9.0">
+                v0.9.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/redis/hiredis/tree/v0.0.1"
+              data-name="v0.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.0.1">
+                v0.0.1
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="/redis/hiredis/commit/3d8709d19d7fa67d203a33c969e69f0f1a4eab02" data-pjax>
+        3d8709d
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-01-06T12:26:55Z">Jan 6, 2018</relative-time></span>
+    </span>
+
+
+      <span class="commit-author-section">
+          <img src="https://camo.githubusercontent.com/659034c459397cb30f2cf147a8deb20329b5b1b8/68747470733a2f2f302e67726176617461722e636f6d2f6176617461722f64313032303839323631613161316232386539626632643462306333323232363f643d68747470732533412532462532466173736574732d63646e2e6769746875622e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d6726733d3430" width="20" height="20" class="avatar avatar-small" alt="not-a-robot[bot]">
+        
+  <span class="author">not-a-robot[bot]</span>
+
+      </span>
+
+      <a href="/redis/hiredis/commit/3d8709d19d7fa67d203a33c969e69f0f1a4eab02" class="message" data-pjax="true" title="Merge #569
+
+569: Ibm aix fix r=badboy">Merge</a> <a href="https://github.com/redis/hiredis/pull/569" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="286381957" data-permission-text="Issue title is private" data-url="https://github.com/redis/hiredis/issues/569">#569</a>
+        <span class="hidden-text-expander inline">
+          <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+        </span>
+
+      <div class="commit-desc"><pre class="text-small">569: Ibm aix fix r=badboy</pre></div>
+
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="/redis/hiredis/tree/3d8709d19d7fa67d203a33c969e69f0f1a4eab02" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/tree/master/adapters" class="js-navigation-open" id="eabb6742dcede5b5823b92f0d2a14990-fc7088384628e41ce63df9cd5a256c80acffb908" title="adapters">adapters</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/515228e5a14bf0901cf1be57495da705f9faa41e" class="message" data-pjax="true" title="Update libevent.h
+
+event_del can not free the &quot;e-&gt;rev&quot; and &quot;e-&gt;wev&quot;,that will leak when reconnect the redis">Update libevent.h</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-03-28T08:46:55Z">Mar 28, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/tree/master/examples" class="js-navigation-open" id="bfebe34154a0dfd9fc7b447fc9ed74e9-0aba7389c4f001b6428cf63cfba274bf19edf9ac" title="examples">examples</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/f932f0ed275bf9d6653b11694e39a13f57e7dc54" class="message" data-pjax="true" title="fix snprintf format string">fix snprintf format string</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-05T13:22:00Z">Oct 5, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/.gitignore" class="js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-c44b5c5370fed236fdc1b1a66b797033b003929b" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/1d2b4d38db86fe7ea97855373a5f3797becd06ab" class="message" data-pjax="true" title="Generate pkgconf during build
+
+The pkgconf source is localized to the Makefile, so we&#39;re not dropping
+an unnecessary &quot;hiredis.pc.in&quot; in the source directory.
+
+Closes #129
+Closes #136">Generate pkgconf during build</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-01-05T21:53:23Z">Jan 5, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/.travis.yml" class="js-navigation-open" id="354f30a63fb0907d4ad57269548329e3-faf2ce6840435dcba6252a7a1d033fcf9835dd47" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/f861d9dc50a563692b76f675c39aa88c79580201" class="message" data-pjax="true" title="chore: Build only branches bors needs">chore: Build only branches bors needs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-07T08:26:02Z">Nov 7, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/CHANGELOG.md" class="js-navigation-open" id="4ac32a78649ca5bdd8e0ba38b7006a1e-f40ec5367ede3979d1db49a041c09ddd3355262c" title="CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/ea42d7e5f6e85723904de6484c3e9f193c0149ee" class="message" data-pjax="true" title="correct spelling mistake">correct spelling mistake</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-09-01T17:44:29Z">Sep 1, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/COPYING" class="js-navigation-open" id="7116ef0705885343c9e1b2171a06be0e-a5fc9739551f607c73895576f1e62c0d744f7f48" itemprop="license" title="COPYING">COPYING</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/0cb7c27d9cfafe83acb9c309a0f913b8993f82b5" class="message" data-pjax="true" title="Update license">Update license</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2011-04-21T20:46:23Z">Apr 21, 2011</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/Makefile" class="js-navigation-open" id="b67911656ef5d18c4ae36cb6741b7965-28a784975876344d38a5ca24d77ef7c84e8e7435" title="Makefile">Makefile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/43284ee4958dbc7996e293a215d99f0051356f37" class="message" data-pjax="true" title='Merge pull request #561 from zshipko/master
+
+Fix "make install" on OpenBSD'>Merge pull request</a> <a href="https://github.com/redis/hiredis/pull/561" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="277600719" data-permission-text="Issue title is private" data-url="https://github.com/redis/hiredis/issues/561">#561</a> <a href="/redis/hiredis/commit/43284ee4958dbc7996e293a215d99f0051356f37" class="message" data-pjax="true" title='Merge pull request #561 from zshipko/master
+
+Fix "make install" on OpenBSD'>from zshipko/master</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-05T14:50:31Z">Jan 5, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/README.md" class="js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-01223ea5921ad275dd4dd027537eff70e5e5ffe5" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/81e8176bacd27e2cc0db021a22c03a2891ade7eb" class="message" data-pjax="true" title="Auto merge of #417 - redis:thread-safety, r=badboy
+
+docs: Note about thread-safety">Auto merge of</a> <a href="https://github.com/redis/hiredis/pull/417" class="issue-link js-issue-link" data-url="https://github.com/redis/hiredis/issues/417" data-id="149809206" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#417</a> <a href="/redis/hiredis/commit/81e8176bacd27e2cc0db021a22c03a2891ade7eb" class="message" data-pjax="true" title="Auto merge of #417 - redis:thread-safety, r=badboy
+
+docs: Note about thread-safety">- redis:thread-safety, r=badboy</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-20T16:31:34Z">Apr 20, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/appveyor.yml" class="js-navigation-open" id="180360612c6b8c4ed830919bbb4dd459-819efbd58b3b167c44611a87333ce99fc2a9e13e" title="appveyor.yml">appveyor.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/fa4d6117086c5dedbab57675034d75f017b02599" class="message" data-pjax="true" title="chore(CI): Skip installing Cygwin">chore(CI): Skip installing Cygwin</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-07T15:42:43Z">Apr 7, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/async.c" class="js-navigation-open" id="8bd6782b369f6afec2c090b37d553d46-0670aa735b828750a85e21e293dc6e0617ca2d10" title="async.c">async.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/74be165c8402739d329954ece50b1c4cfe9d1e16" class="message" data-pjax="true" title="Merge #524 #525
+
+524: Don't pass a negative value to __redisAsyncCommand if redisFormatSdsCommandArgv fails r=badboy
+
+
+
+525: Fix compilation on FreeBSD 10.3 with default compiler r=badboy
+
+Given FreeBSD 10.3 with default compiler:
+
+&gt; $ cc -v
+&gt; FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512
+&gt; Target: x86_64-unknown-freebsd10.3
+
+Defining _XOPEN_SOURCE to 600 on the fixed line leads to the following errors:
+
+&gt; cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  net.c
+&gt; net.c:435:29: error: use of undeclared identifier 'AF_LOCAL'
+&gt;     if (redisCreateSocket(c,AF_LOCAL) &lt; 0)
+&gt;                             ^
+&gt; net.c:460:21: error: use of undeclared identifier 'AF_LOCAL'
+&gt;     sa.sun_family = AF_LOCAL;
+&gt;                     ^
+&gt; 2 errors generated.
+&gt; 
+
+AF_LOCAL is defined in sys/socket.h within ifdef __BSD_VISIBLE.
+
+__BSD_VISIBLE could be defined in sys/cdefs.h, but it is never done if _XOPEN_SOURCE is defined.
+
+So on FreeBSD _XOPEN_SOURCE shouldn't be defined.">Merge</a> <a href="https://github.com/redis/hiredis/pull/524" class="issue-link js-issue-link" data-url="https://github.com/redis/hiredis/issues/524" data-id="228769037" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#524</a> <a href="https://github.com/redis/hiredis/pull/525" class="issue-link js-issue-link" data-url="https://github.com/redis/hiredis/issues/525" data-id="229273882" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#525</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-07-15T14:17:07Z">Jul 15, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/async.h" class="js-navigation-open" id="65d09896c5380a5bc28c7d4b45e351a0-59cbf469b9f1d9454c15571b0f756895be900477" title="async.h">async.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/7c4d2557c4bbc637514392cb725719790b50f677" class="message" data-pjax="true" title="Add support for SO_REUSEADDR
+
+[This introduces some new API functions.]
+
+* Adds new flag to the connection context indicating SO_REUSEADDR
+  should be set.
+* Adds max number of retries constant for when connect() hits
+  EADDRNOTAVAIL.
+* Adds new function, redisAsyncConnectBindWithReuse(), letting
+  clients enable this functionality.
+
+[Removed trailing whitespace in new header lines.]
+
+Closes #264">Add support for SO_REUSEADDR</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-01-05T21:39:30Z">Jan 5, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/dict.c" class="js-navigation-open" id="d351b0a35f2161a6fc4c5f3fb312b58c-e17a625461a7c6988d56fb1b3119c643464431a9" title="dict.c">dict.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/e2f6ee239c9c0cedfccee1db77c95e673fe6fe04" class="message" data-pjax="true" title="fixing typos">fixing typos</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-10-27T17:19:24Z">Oct 27, 2015</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/dict.h" class="js-navigation-open" id="1bc677c8ef2f5542d4c809cb942f812a-95fcd280e2cfd663a7644cc71b65be58f5c9775e" title="dict.h">dict.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/c6b8bd77c0fe00dbc455b39208f15761178160a3" class="message" data-pjax="true" title="Make dictionary functions static and include the .c file">Make dictionary functions static and include the .c file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2011-01-14T11:07:29Z">Jan 14, 2011</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/fmacros.h" class="js-navigation-open" id="7478ecfdd252d1a0834ec869426ca9cf-4cdbc1346743666197202391eb1334a55685011f" title="fmacros.h">fmacros.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/952a33f298f14775fae61675b2ff541abf24f63d" class="message" data-pjax="true" title="Make it compile on IBM AIX systems
+
+Closes #422">Make it compile on IBM AIX systems</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-06T12:25:35Z">Jan 6, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/hiredis.c" class="js-navigation-open" id="99f74446558e6bf05c07180b19f336af-b344962c088b52fc429054188c0baeffdfed88d2" title="hiredis.c">hiredis.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/9219556386a928f86ef38a36b081c7cf42d5e87a" class="message" data-pjax="true" title="calloc param fixes and NULL check">calloc param fixes and NULL check</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-05T15:19:54Z">Jan 5, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/hiredis.h" class="js-navigation-open" id="07f77764d76caac2767fe1f26799e248-77d5797eb9b4cb1f321a9efd2423a620abf1bc62" title="hiredis.h">hiredis.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/2ec7740c3a4661c2b0c05278a6f756c291547647" class="message" data-pjax="true" title="suppress gcc complaint">suppress gcc complaint</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-03-22T08:03:52Z">Mar 22, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/net.c" class="js-navigation-open" id="ebb43b3715c8c17806b06e65662318ac-33d9a8297b289fca9cf7fe665c1273529780a52b" title="net.c">net.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/97d611e9b58ea5d26a203aafe5a586a00d1e380c" class="message" data-pjax="true" title="Merge #533
+
+533: Small fixes r=badboy">Merge</a> <a href="https://github.com/redis/hiredis/pull/533" class="issue-link js-issue-link" data-url="https://github.com/redis/hiredis/issues/533" data-id="236298148" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#533</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-07-15T14:50:49Z">Jul 15, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/net.h" class="js-navigation-open" id="1ff48249d70d6bd72c56f6348bc829ca-fc8ddd301f1fe803516793e5559a0cc118793341" title="net.h">net.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/952a33f298f14775fae61675b2ff541abf24f63d" class="message" data-pjax="true" title="Make it compile on IBM AIX systems
+
+Closes #422">Make it compile on IBM AIX systems</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-06T12:25:35Z">Jan 6, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/read.c" class="js-navigation-open" id="9f684ff0e1715080d353d6749ae168f3-061bbda1ff7961c264b4a3af3df49c95d551d0c2" title="read.c">read.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/9219556386a928f86ef38a36b081c7cf42d5e87a" class="message" data-pjax="true" title="calloc param fixes and NULL check">calloc param fixes and NULL check</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-05T15:19:54Z">Jan 5, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/read.h" class="js-navigation-open" id="97c66ad50d32791399362c841dcad7b1-2988aa453bd6ae8f0fd0a8878bd7b9e02446e8f3" title="read.h">read.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/8f5265ded340c70c87370c99fea6787c34ea1e55" class="message" data-pjax="true" title="fix: Remove backwards compatibility macro&#39;s
+
+Closes #296
+
+BREAKING CHANGE: This removes the redisReplyReader* functions, which are
+                 already replaced by redisReader* functions.
+                 It renames `redisReplyReaderSetPrivdata`,
+                 `redisReplyReaderGetObject` and `redisReplyReaderGetError`
+                 to `redisReaderSetPrivdata`, `redisReaderGetObject`
+                 and `redisReaderGetError`.">fix: Remove backwards compatibility macro's</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-20T13:42:10Z">Apr 20, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/sds.c" class="js-navigation-open" id="5d4046f0ebe42c375a4eb3302f991cc4-923ffd82f190b2cd53eef4482abdf3682ae8f7be" title="sds.c">sds.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/8636d90821f9656c62e92e78d93a380fc00fc0f7" class="message" data-pjax="true" title="Avoid unchecked malloc
+
+Closes #471">Avoid unchecked malloc</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-12-09T09:51:26Z">Dec 9, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/sds.h" class="js-navigation-open" id="7d7105c8737577b61e230a2d0a548012-13be75a9fca1e8808907d342e847e18f5f37b696" title="sds.h">sds.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/f5b32e24741f54ee7b064b05fea2c766aaa1123f" class="message" data-pjax="true" title="Update sds.h
+
+Fixing sds.h for building hiredis in cpp project">Update sds.h</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-05-14T20:11:33Z">May 14, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/sdsalloc.h" class="js-navigation-open" id="f316d39e1b37602ae894e98e4d0da56f-f43023c48438961445f6064ae8d0cc25f2b42f21" title="sdsalloc.h">sdsalloc.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/a72860765f182a82c689eb127b0bdc65910222b9" class="message" data-pjax="true" title="fix: Add sdsalloc.h file">fix: Add sdsalloc.h file</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-20T13:36:51Z">Apr 20, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/test.c" class="js-navigation-open" id="d02a618fa88f46a768e6df00dddaad2a-a23d60676acb4b625dd7e63087c1cb907f400d49" title="test.c">test.c</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/8655a6ac7a1bdd9b04d669585b4ae430c167ad80" class="message" data-pjax="true" title="test: Add regression test for sds argv formatting">test: Add regression test for sds argv formatting</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2016-05-14T09:26:18Z">May 14, 2016</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/redis/hiredis/blob/master/win32.h" class="js-navigation-open" id="be4235af20a29bf4f79dfeeb8d6977c4-1a27c18f2ae50e6523524ad92273fe3f8b46d41f" title="win32.h">win32.h</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/redis/hiredis/commit/ec229678c22e673e8d48070593f7b028a514882a" class="message" data-pjax="true" title="Added support for compiling the parser code with Microsoft Visual C compiler.
+For hiredis-py and others support on windows.">Added support for compiling the parser code with Microsoft Visual C c…</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2015-03-13T13:58:23Z">Mar 13, 2015</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><p><a href="https://travis-ci.org/redis/hiredis" rel="nofollow"><img src="https://camo.githubusercontent.com/a0fe10a900f612528aedd28bbca9ec24181c1a71/68747470733a2f2f7472617669732d63692e6f72672f72656469732f686972656469732e706e67" alt="Build Status" data-canonical-src="https://travis-ci.org/redis/hiredis.png" style="max-width:100%;"></a></p>
+<p><strong>This Readme reflects the latest changed in the master branch. See <a href="https://github.com/redis/hiredis/tree/v0.13.3">v0.13.3</a> for the Readme and documentation for the latest release.</strong></p>
+<h1><a href="#hiredis" aria-hidden="true" class="anchor" id="user-content-hiredis"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HIREDIS</h1>
+<p>Hiredis is a minimalistic C client library for the <a href="http://redis.io/" rel="nofollow">Redis</a> database.</p>
+<p>It is minimalistic because it just adds minimal support for the protocol, but
+at the same time it uses a high level printf-alike API in order to make it
+much higher level than otherwise suggested by its minimal code base and the
+lack of explicit bindings for every Redis command.</p>
+<p>Apart from supporting sending commands and receiving replies, it comes with
+a reply parser that is decoupled from the I/O layer. It
+is a stream parser designed for easy reusability, which can for instance be used
+in higher level language bindings for efficient reply parsing.</p>
+<p>Hiredis only supports the binary-safe Redis protocol, so you can use it with any
+Redis version &gt;= 1.2.0.</p>
+<p>The library comes with multiple APIs. There is the
+<em>synchronous API</em>, the <em>asynchronous API</em> and the <em>reply parsing API</em>.</p>
+<h2><a href="#upgrading-to-100" aria-hidden="true" class="anchor" id="user-content-upgrading-to-100"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Upgrading to <code>1.0.0</code></h2>
+<p>Version 1.0.0 marks a stable release of hiredis.
+It includes some minor breaking changes, mostly to make the exposed API more uniform and self-explanatory.
+It also bundles the updated <code>sds</code> library, to sync up with upstream and Redis.
+For most applications a recompile against the new hiredis should be enough.
+For code changes see the <a href="/redis/hiredis/blob/master/CHANGELOG.md">Changelog</a>.</p>
+<h2><a href="#upgrading-from-090" aria-hidden="true" class="anchor" id="user-content-upgrading-from-090"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Upgrading from <code>&lt;0.9.0</code></h2>
+<p>Version 0.9.0 is a major overhaul of hiredis in every aspect. However, upgrading existing
+code using hiredis should not be a big pain. The key thing to keep in mind when
+upgrading is that hiredis &gt;= 0.9.0 uses a <code>redisContext*</code> to keep state, in contrast to
+the stateless 0.0.1 that only has a file descriptor to work with.</p>
+<h2><a href="#synchronous-api" aria-hidden="true" class="anchor" id="user-content-synchronous-api"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synchronous API</h2>
+<p>To consume the synchronous API, there are only a few function calls that need to be introduced:</p>
+<div class="highlight highlight-source-c"><pre>redisContext *<span class="pl-en">redisConnect</span>(<span class="pl-k">const</span> <span class="pl-k">char</span> *ip, <span class="pl-k">int</span> port);
+<span class="pl-k">void</span> *<span class="pl-en">redisCommand</span>(redisContext *c, <span class="pl-k">const</span> <span class="pl-k">char</span> *format, ...);
+<span class="pl-k">void</span> <span class="pl-en">freeReplyObject</span>(<span class="pl-k">void</span> *reply);</pre></div>
+<h3><a href="#connecting" aria-hidden="true" class="anchor" id="user-content-connecting"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connecting</h3>
+<p>The function <code>redisConnect</code> is used to create a so-called <code>redisContext</code>. The
+context is where Hiredis holds state for a connection. The <code>redisContext</code>
+struct has an integer <code>err</code> field that is non-zero when the connection is in
+an error state. The field <code>errstr</code> will contain a string with a description of
+the error. More information on errors can be found in the <strong>Errors</strong> section.
+After trying to connect to Redis using <code>redisConnect</code> you should
+check the <code>err</code> field to see if establishing the connection was successful:</p>
+<div class="highlight highlight-source-c"><pre>redisContext *c = redisConnect(<span class="pl-s"><span class="pl-pds">"</span>127.0.0.1<span class="pl-pds">"</span></span>, <span class="pl-c1">6379</span>);
+<span class="pl-k">if</span> (c == <span class="pl-c1">NULL</span> || c-&gt;err) {
+    <span class="pl-k">if</span> (c) {
+        <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Error: <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, c-&gt;errstr);
+        <span class="pl-c"><span class="pl-c">//</span> handle error</span>
+    } <span class="pl-k">else</span> {
+        <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Can't allocate redis context<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);
+    }
+}</pre></div>
+<p><em>Note: A <code>redisContext</code> is not thread-safe.</em></p>
+<h3><a href="#sending-commands" aria-hidden="true" class="anchor" id="user-content-sending-commands"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sending commands</h3>
+<p>There are several ways to issue commands to Redis. The first that will be introduced is
+<code>redisCommand</code>. This function takes a format similar to printf. In the simplest form,
+it is used like this:</p>
+<div class="highlight highlight-source-c"><pre>reply = redisCommand(context, <span class="pl-s"><span class="pl-pds">"</span>SET foo bar<span class="pl-pds">"</span></span>);</pre></div>
+<p>The specifier <code>%s</code> interpolates a string in the command, and uses <code>strlen</code> to
+determine the length of the string:</p>
+<div class="highlight highlight-source-c"><pre>reply = redisCommand(context, <span class="pl-s"><span class="pl-pds">"</span>SET foo <span class="pl-c1">%s</span><span class="pl-pds">"</span></span>, value);</pre></div>
+<p>When you need to pass binary safe strings in a command, the <code>%b</code> specifier can be
+used. Together with a pointer to the string, it requires a <code>size_t</code> length argument
+of the string:</p>
+<div class="highlight highlight-source-c"><pre>reply = redisCommand(context, <span class="pl-s"><span class="pl-pds">"</span>SET foo %b<span class="pl-pds">"</span></span>, value, (<span class="pl-c1">size_t</span>) valuelen);</pre></div>
+<p>Internally, Hiredis splits the command in different arguments and will
+convert it to the protocol used to communicate with Redis.
+One or more spaces separates arguments, so you can use the specifiers
+anywhere in an argument:</p>
+<div class="highlight highlight-source-c"><pre>reply = redisCommand(context, <span class="pl-s"><span class="pl-pds">"</span>SET key:<span class="pl-c1">%s</span> <span class="pl-c1">%s</span><span class="pl-pds">"</span></span>, myid, value);</pre></div>
+<h3><a href="#using-replies" aria-hidden="true" class="anchor" id="user-content-using-replies"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using replies</h3>
+<p>The return value of <code>redisCommand</code> holds a reply when the command was
+successfully executed. When an error occurs, the return value is <code>NULL</code> and
+the <code>err</code> field in the context will be set (see section on <strong>Errors</strong>).
+Once an error is returned the context cannot be reused and you should set up
+a new connection.</p>
+<p>The standard replies that <code>redisCommand</code> are of the type <code>redisReply</code>. The
+<code>type</code> field in the <code>redisReply</code> should be used to test what kind of reply
+was received:</p>
+<ul>
+<li>
+<p><strong><code>REDIS_REPLY_STATUS</code></strong>:</p>
+<ul>
+<li>The command replied with a status reply. The status string can be accessed using <code>reply-&gt;str</code>.
+The length of this string can be accessed using <code>reply-&gt;len</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>REDIS_REPLY_ERROR</code></strong>:</p>
+<ul>
+<li>The command replied with an error. The error string can be accessed identical to <code>REDIS_REPLY_STATUS</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>REDIS_REPLY_INTEGER</code></strong>:</p>
+<ul>
+<li>The command replied with an integer. The integer value can be accessed using the
+<code>reply-&gt;integer</code> field of type <code>long long</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>REDIS_REPLY_NIL</code></strong>:</p>
+<ul>
+<li>The command replied with a <strong>nil</strong> object. There is no data to access.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>REDIS_REPLY_STRING</code></strong>:</p>
+<ul>
+<li>A bulk (string) reply. The value of the reply can be accessed using <code>reply-&gt;str</code>.
+The length of this string can be accessed using <code>reply-&gt;len</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>REDIS_REPLY_ARRAY</code></strong>:</p>
+<ul>
+<li>A multi bulk reply. The number of elements in the multi bulk reply is stored in
+<code>reply-&gt;elements</code>. Every element in the multi bulk reply is a <code>redisReply</code> object as well
+and can be accessed via <code>reply-&gt;element[..index..]</code>.
+Redis may reply with nested arrays but this is fully supported.</li>
+</ul>
+</li>
+</ul>
+<p>Replies should be freed using the <code>freeReplyObject()</code> function.
+Note that this function will take care of freeing sub-reply objects
+contained in arrays and nested arrays, so there is no need for the user to
+free the sub replies (it is actually harmful and will corrupt the memory).</p>
+<p><strong>Important:</strong> the current version of hiredis (0.10.0) frees replies when the
+asynchronous API is used. This means you should not call <code>freeReplyObject</code> when
+you use this API. The reply is cleaned up by hiredis <em>after</em> the callback
+returns. This behavior will probably change in future releases, so make sure to
+keep an eye on the changelog when upgrading (see issue #39).</p>
+<h3><a href="#cleaning-up" aria-hidden="true" class="anchor" id="user-content-cleaning-up"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cleaning up</h3>
+<p>To disconnect and free the context the following function can be used:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span> <span class="pl-en">redisFree</span>(redisContext *c);</pre></div>
+<p>This function immediately closes the socket and then frees the allocations done in
+creating the context.</p>
+<h3><a href="#sending-commands-contd" aria-hidden="true" class="anchor" id="user-content-sending-commands-contd"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sending commands (cont'd)</h3>
+<p>Together with <code>redisCommand</code>, the function <code>redisCommandArgv</code> can be used to issue commands.
+It has the following prototype:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span> *<span class="pl-en">redisCommandArgv</span>(redisContext *c, <span class="pl-k">int</span> argc, <span class="pl-k">const</span> <span class="pl-k">char</span> **argv, <span class="pl-k">const</span> <span class="pl-c1">size_t</span> *argvlen);</pre></div>
+<p>It takes the number of arguments <code>argc</code>, an array of strings <code>argv</code> and the lengths of the
+arguments <code>argvlen</code>. For convenience, <code>argvlen</code> may be set to <code>NULL</code> and the function will
+use <code>strlen(3)</code> on every argument to determine its length. Obviously, when any of the arguments
+need to be binary safe, the entire array of lengths <code>argvlen</code> should be provided.</p>
+<p>The return value has the same semantic as <code>redisCommand</code>.</p>
+<h3><a href="#pipelining" aria-hidden="true" class="anchor" id="user-content-pipelining"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pipelining</h3>
+<p>To explain how Hiredis supports pipelining in a blocking connection, there needs to be
+understanding of the internal execution flow.</p>
+<p>When any of the functions in the <code>redisCommand</code> family is called, Hiredis first formats the
+command according to the Redis protocol. The formatted command is then put in the output buffer
+of the context. This output buffer is dynamic, so it can hold any number of commands.
+After the command is put in the output buffer, <code>redisGetReply</code> is called. This function has the
+following two execution paths:</p>
+<ol>
+<li>The input buffer is non-empty:
+<ul>
+<li>Try to parse a single reply from the input buffer and return it</li>
+<li>If no reply could be parsed, continue at <em>2</em></li>
+</ul>
+</li>
+<li>The input buffer is empty:
+<ul>
+<li>Write the <strong>entire</strong> output buffer to the socket</li>
+<li>Read from the socket until a single reply could be parsed</li>
+</ul>
+</li>
+</ol>
+<p>The function <code>redisGetReply</code> is exported as part of the Hiredis API and can be used when a reply
+is expected on the socket. To pipeline commands, the only things that needs to be done is
+filling up the output buffer. For this cause, two commands can be used that are identical
+to the <code>redisCommand</code> family, apart from not returning a reply:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span> <span class="pl-en">redisAppendCommand</span>(redisContext *c, <span class="pl-k">const</span> <span class="pl-k">char</span> *format, ...);
+<span class="pl-k">void</span> <span class="pl-en">redisAppendCommandArgv</span>(redisContext *c, <span class="pl-k">int</span> argc, <span class="pl-k">const</span> <span class="pl-k">char</span> **argv, <span class="pl-k">const</span> <span class="pl-c1">size_t</span> *argvlen);</pre></div>
+<p>After calling either function one or more times, <code>redisGetReply</code> can be used to receive the
+subsequent replies. The return value for this function is either <code>REDIS_OK</code> or <code>REDIS_ERR</code>, where
+the latter means an error occurred while reading a reply. Just as with the other commands,
+the <code>err</code> field in the context can be used to find out what the cause of this error is.</p>
+<p>The following examples shows a simple pipeline (resulting in only a single call to <code>write(2)</code> and
+a single call to <code>read(2)</code>):</p>
+<div class="highlight highlight-source-c"><pre>redisReply *reply;
+<span class="pl-en">redisAppendCommand</span>(context,<span class="pl-s"><span class="pl-pds">"</span>SET foo bar<span class="pl-pds">"</span></span>);
+<span class="pl-en">redisAppendCommand</span>(context,<span class="pl-s"><span class="pl-pds">"</span>GET foo<span class="pl-pds">"</span></span>);
+<span class="pl-en">redisGetReply</span>(context,&amp;reply); <span class="pl-c"><span class="pl-c">//</span> reply for SET</span>
+<span class="pl-en">freeReplyObject</span>(reply);
+<span class="pl-en">redisGetReply</span>(context,&amp;reply); <span class="pl-c"><span class="pl-c">//</span> reply for GET</span>
+<span class="pl-en">freeReplyObject</span>(reply);</pre></div>
+<p>This API can also be used to implement a blocking subscriber:</p>
+<div class="highlight highlight-source-c"><pre>reply = redisCommand(context,<span class="pl-s"><span class="pl-pds">"</span>SUBSCRIBE foo<span class="pl-pds">"</span></span>);
+<span class="pl-en">freeReplyObject</span>(reply);
+<span class="pl-k">while</span>(redisGetReply(context,&amp;reply) == REDIS_OK) {
+    <span class="pl-c"><span class="pl-c">//</span> consume message</span>
+    <span class="pl-c1">freeReplyObject</span>(reply);
+}</pre></div>
+<h3><a href="#errors" aria-hidden="true" class="anchor" id="user-content-errors"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Errors</h3>
+<p>When a function call is not successful, depending on the function either <code>NULL</code> or <code>REDIS_ERR</code> is
+returned. The <code>err</code> field inside the context will be non-zero and set to one of the
+following constants:</p>
+<ul>
+<li>
+<p><strong><code>REDIS_ERR_IO</code></strong>:
+There was an I/O error while creating the connection, trying to write
+to the socket or read from the socket. If you included <code>errno.h</code> in your
+application, you can use the global <code>errno</code> variable to find out what is
+wrong.</p>
+</li>
+<li>
+<p><strong><code>REDIS_ERR_EOF</code></strong>:
+The server closed the connection which resulted in an empty read.</p>
+</li>
+<li>
+<p><strong><code>REDIS_ERR_PROTOCOL</code></strong>:
+There was an error while parsing the protocol.</p>
+</li>
+<li>
+<p><strong><code>REDIS_ERR_OTHER</code></strong>:
+Any other error. Currently, it is only used when a specified hostname to connect
+to cannot be resolved.</p>
+</li>
+</ul>
+<p>In every case, the <code>errstr</code> field in the context will be set to hold a string representation
+of the error.</p>
+<h2><a href="#asynchronous-api" aria-hidden="true" class="anchor" id="user-content-asynchronous-api"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Asynchronous API</h2>
+<p>Hiredis comes with an asynchronous API that works easily with any event library.
+Examples are bundled that show using Hiredis with <a href="http://software.schmorp.de/pkg/libev.html" rel="nofollow">libev</a>
+and <a href="http://monkey.org/%7Eprovos/libevent/" rel="nofollow">libevent</a>.</p>
+<h3><a href="#connecting-1" aria-hidden="true" class="anchor" id="user-content-connecting-1"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connecting</h3>
+<p>The function <code>redisAsyncConnect</code> can be used to establish a non-blocking connection to
+Redis. It returns a pointer to the newly created <code>redisAsyncContext</code> struct. The <code>err</code> field
+should be checked after creation to see if there were errors creating the connection.
+Because the connection that will be created is non-blocking, the kernel is not able to
+instantly return if the specified host and port is able to accept a connection.</p>
+<p><em>Note: A <code>redisAsyncContext</code> is not thread-safe.</em></p>
+<div class="highlight highlight-source-c"><pre>redisAsyncContext *c = redisAsyncConnect(<span class="pl-s"><span class="pl-pds">"</span>127.0.0.1<span class="pl-pds">"</span></span>, <span class="pl-c1">6379</span>);
+<span class="pl-k">if</span> (c-&gt;err) {
+    <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Error: <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, c-&gt;errstr);
+    <span class="pl-c"><span class="pl-c">//</span> handle error</span>
+}</pre></div>
+<p>The asynchronous context can hold a disconnect callback function that is called when the
+connection is disconnected (either because of an error or per user request). This function should
+have the following prototype:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span>(<span class="pl-k">const</span> redisAsyncContext *c, <span class="pl-k">int</span> status);</pre></div>
+<p>On a disconnect, the <code>status</code> argument is set to <code>REDIS_OK</code> when disconnection was initiated by the
+user, or <code>REDIS_ERR</code> when the disconnection was caused by an error. When it is <code>REDIS_ERR</code>, the <code>err</code>
+field in the context can be accessed to find out the cause of the error.</p>
+<p>The context object is always freed after the disconnect callback fired. When a reconnect is needed,
+the disconnect callback is a good point to do so.</p>
+<p>Setting the disconnect callback can only be done once per context. For subsequent calls it will
+return <code>REDIS_ERR</code>. The function to set the disconnect callback has the following prototype:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">int</span> <span class="pl-en">redisAsyncSetDisconnectCallback</span>(redisAsyncContext *ac, redisDisconnectCallback *fn);</pre></div>
+<h3><a href="#sending-commands-and-their-callbacks" aria-hidden="true" class="anchor" id="user-content-sending-commands-and-their-callbacks"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sending commands and their callbacks</h3>
+<p>In an asynchronous context, commands are automatically pipelined due to the nature of an event loop.
+Therefore, unlike the synchronous API, there is only a single way to send commands.
+Because commands are sent to Redis asynchronously, issuing a command requires a callback function
+that is called when the reply is received. Reply callbacks should have the following prototype:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span>(redisAsyncContext *c, <span class="pl-k">void</span> *reply, <span class="pl-k">void</span> *privdata);</pre></div>
+<p>The <code>privdata</code> argument can be used to curry arbitrary data to the callback from the point where
+the command is initially queued for execution.</p>
+<p>The functions that can be used to issue commands in an asynchronous context are:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">int</span> <span class="pl-en">redisAsyncCommand</span>(
+  redisAsyncContext *ac, redisCallbackFn *fn, <span class="pl-k">void</span> *privdata,
+  <span class="pl-k">const</span> <span class="pl-k">char</span> *format, ...);
+<span class="pl-k">int</span> <span class="pl-en">redisAsyncCommandArgv</span>(
+  redisAsyncContext *ac, redisCallbackFn *fn, <span class="pl-k">void</span> *privdata,
+  <span class="pl-k">int</span> argc, <span class="pl-k">const</span> <span class="pl-k">char</span> **argv, <span class="pl-k">const</span> <span class="pl-c1">size_t</span> *argvlen);</pre></div>
+<p>Both functions work like their blocking counterparts. The return value is <code>REDIS_OK</code> when the command
+was successfully added to the output buffer and <code>REDIS_ERR</code> otherwise. Example: when the connection
+is being disconnected per user-request, no new commands may be added to the output buffer and <code>REDIS_ERR</code> is
+returned on calls to the <code>redisAsyncCommand</code> family.</p>
+<p>If the reply for a command with a <code>NULL</code> callback is read, it is immediately freed. When the callback
+for a command is non-<code>NULL</code>, the memory is freed immediately following the callback: the reply is only
+valid for the duration of the callback.</p>
+<p>All pending callbacks are called with a <code>NULL</code> reply when the context encountered an error.</p>
+<h3><a href="#disconnecting" aria-hidden="true" class="anchor" id="user-content-disconnecting"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Disconnecting</h3>
+<p>An asynchronous connection can be terminated using:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">void</span> <span class="pl-en">redisAsyncDisconnect</span>(redisAsyncContext *ac);</pre></div>
+<p>When this function is called, the connection is <strong>not</strong> immediately terminated. Instead, new
+commands are no longer accepted and the connection is only terminated when all pending commands
+have been written to the socket, their respective replies have been read and their respective
+callbacks have been executed. After this, the disconnection callback is executed with the
+<code>REDIS_OK</code> status and the context object is freed.</p>
+<h3><a href="#hooking-it-up-to-event-library-x" aria-hidden="true" class="anchor" id="user-content-hooking-it-up-to-event-library-x"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hooking it up to event library <em>X</em></h3>
+<p>There are a few hooks that need to be set on the context object after it is created.
+See the <code>adapters/</code> directory for bindings to <em>libev</em> and <em>libevent</em>.</p>
+<h2><a href="#reply-parsing-api" aria-hidden="true" class="anchor" id="user-content-reply-parsing-api"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reply parsing API</h2>
+<p>Hiredis comes with a reply parsing API that makes it easy for writing higher
+level language bindings.</p>
+<p>The reply parsing API consists of the following functions:</p>
+<div class="highlight highlight-source-c"><pre>redisReader *<span class="pl-en">redisReaderCreate</span>(<span class="pl-k">void</span>);
+<span class="pl-k">void</span> <span class="pl-en">redisReaderFree</span>(redisReader *reader);
+<span class="pl-k">int</span> <span class="pl-en">redisReaderFeed</span>(redisReader *reader, <span class="pl-k">const</span> <span class="pl-k">char</span> *buf, <span class="pl-c1">size_t</span> len);
+<span class="pl-k">int</span> <span class="pl-en">redisReaderGetReply</span>(redisReader *reader, <span class="pl-k">void</span> **reply);</pre></div>
+<p>The same set of functions are used internally by hiredis when creating a
+normal Redis context, the above API just exposes it to the user for a direct
+usage.</p>
+<h3><a href="#usage" aria-hidden="true" class="anchor" id="user-content-usage"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h3>
+<p>The function <code>redisReaderCreate</code> creates a <code>redisReader</code> structure that holds a
+buffer with unparsed data and state for the protocol parser.</p>
+<p>Incoming data -- most likely from a socket -- can be placed in the internal
+buffer of the <code>redisReader</code> using <code>redisReaderFeed</code>. This function will make a
+copy of the buffer pointed to by <code>buf</code> for <code>len</code> bytes. This data is parsed
+when <code>redisReaderGetReply</code> is called. This function returns an integer status
+and a reply object (as described above) via <code>void **reply</code>. The returned status
+can be either <code>REDIS_OK</code> or <code>REDIS_ERR</code>, where the latter means something went
+wrong (either a protocol error, or an out of memory error).</p>
+<p>The parser limits the level of nesting for multi bulk payloads to 7. If the
+multi bulk nesting level is higher than this, the parser returns an error.</p>
+<h3><a href="#customizing-replies" aria-hidden="true" class="anchor" id="user-content-customizing-replies"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Customizing replies</h3>
+<p>The function <code>redisReaderGetReply</code> creates <code>redisReply</code> and makes the function
+argument <code>reply</code> point to the created <code>redisReply</code> variable. For instance, if
+the response of type <code>REDIS_REPLY_STATUS</code> then the <code>str</code> field of <code>redisReply</code>
+will hold the status as a vanilla C string. However, the functions that are
+responsible for creating instances of the <code>redisReply</code> can be customized by
+setting the <code>fn</code> field on the <code>redisReader</code> struct. This should be done
+immediately after creating the <code>redisReader</code>.</p>
+<p>For example, <a href="https://github.com/pietern/hiredis-rb/blob/master/ext/hiredis_ext/reader.c">hiredis-rb</a>
+uses customized reply object functions to create Ruby objects.</p>
+<h3><a href="#reader-max-buffer" aria-hidden="true" class="anchor" id="user-content-reader-max-buffer"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reader max buffer</h3>
+<p>Both when using the Reader API directly or when using it indirectly via a
+normal Redis context, the redisReader structure uses a buffer in order to
+accumulate data from the server.
+Usually this buffer is destroyed when it is empty and is larger than 16
+KiB in order to avoid wasting memory in unused buffers</p>
+<p>However when working with very big payloads destroying the buffer may slow
+down performances considerably, so it is possible to modify the max size of
+an idle buffer changing the value of the <code>maxbuf</code> field of the reader structure
+to the desired value. The special value of 0 means that there is no maximum
+value for an idle buffer, so the buffer will never get freed.</p>
+<p>For instance if you have a normal Redis context you can set the maximum idle
+buffer to zero (unlimited) just with:</p>
+<div class="highlight highlight-source-c"><pre>context-&gt;reader-&gt;maxbuf = <span class="pl-c1">0</span>;</pre></div>
+<p>This should be done only in order to maximize performances when working with
+large payloads. The context should be set back to <code>REDIS_READER_MAX_BUF</code> again
+as soon as possible in order to prevent allocation of useless memory.</p>
+<h2><a href="#authors" aria-hidden="true" class="anchor" id="user-content-authors"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AUTHORS</h2>
+<p>Hiredis was written by Salvatore Sanfilippo (antirez at gmail) and
+Pieter Noordhuis (pcnoordhuis at gmail) and is released under the BSD license.<br>
+Hiredis is currently maintained by Matt Stancliff (matt at genges dot com) and
+Jan-Erik Rediger (janerik at fnordig dot com)</p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.23020s from unicorn-4277307287-1sxkr">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-1378513244796959154de41db23c9593f69d95bfbc36e726129c610a32bc4f0f8fbc10c7dd974ff06d5b3c251e32ed0c3a7cf9317c9bcf1dbfff0dbd642e31fc.js"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-e5e34227117a251141225ce90e1382382af4eb51cd709039bb3154ecf675e3e1a436f4d468b812e008b8d8886c014f44e06d81feefdadacffa52c6d3c1473950.js"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-29aa06384e6a192807f1c03cb970b0a0a2e75aefb374c8b138c909978b658aafd10fcac74a39009b6846c729be88a7f825fc9c0ddf735fc8b7198e671708b96e.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
