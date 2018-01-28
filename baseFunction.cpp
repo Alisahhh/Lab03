@@ -49,7 +49,9 @@ void reciveAndSend(fakeServer *server) {
   //cout<<"begin select"<<endl;
   //listen(server->sockFd, BACKLOG);
   FD_SET(server->sockFd,&server->allFd);
+  //cout<<"begin select\n";
   int ready = select(server->fdMaxSize + 1, &server->allFd, nullptr, nullptr, nullptr);
+  //cout<<"select success\n";
   if (ready <= 0)
     return;
   if (FD_ISSET(server->sockFd, &(server->allFd))) {
@@ -64,7 +66,7 @@ void reciveAndSend(fakeServer *server) {
     server->clients->push_back(*C);
     if(ready==1) return;
   }
-  cout<<server->clients->size()<<endl;
+  //cout<<server->clients->size()<<endl;
   for (auto iter = server->clients->begin(); iter != server->clients->end();) {
     if(FD_ISSET(iter->clientFd,&server->allFd)){
       auto next=iter;
@@ -78,33 +80,26 @@ void reciveAndSend(fakeServer *server) {
 void redisSend(list<client>::iterator iter, serverReply *reply) {
   switch (reply->type) {
   case REDIS_REPLY_NIL: {
-    int length = 10;
-    char *buf;
-    buf = (char *)malloc(length);
-    memcpy(buf, "$-1\r\n", sizeof("$-1\r\n"));
-    send(iter->clientFd, buf, sizeof(buf), 0);
-    free(buf);
-    break;
-  }
-  case REDIS_REPLY_ERROR: {
-    send(iter->clientFd, "-\r\n", 3, 0);
+    send(iter->clientFd, "$-1\r\n", sizeof("$-1\r\n")-1, 0);
     break;
   }
   case REDIS_REPLY_SET:{
-    send(iter->clientFd, "+OK\r\n", 5, 0);
+    //cout<<"SET"<<endl;
+    send(iter->clientFd, "+OK\r\n",sizeof("+OK\r\n")-1, 0);
     break;
   }
   case REDIS_REPLY_STRING: {
-    int length = 1;
-    length = 9+reply->length;
+    int length = 6+reply->length;
     char *buf;
-    buf = (char *)malloc(length);
-    memcpy(buf, "$", sizeof("$"));
+    buf = (char *)malloc(length+1);
+    buf[0]='$';
     buf[1]='0'+reply->length;//length <=9 unfinish
     buf[2]='\r';buf[3]='\n';
     memcpy(buf + 4, reply->str, reply->length);
-    memcpy(buf + 4 + reply->length, "\r\n", sizeof("\r\n"));
+    memcpy(buf + 4 + reply->length, "\r\n", sizeof("\r\n")-1);
+    buf[length]='\0';
     int num = send(iter->clientFd, buf, length, 0);
+    //int num = send(iter->clientFd, "$6\r\nsizeof\r\n",sizeof("$6\r\nsizeof\r\n")-1, 0);
     if(num==-1) cout<<"send"<<endl;
     free(buf);
     break;
@@ -161,7 +156,6 @@ void networkRead(list<client>::iterator iter) {
     if (opt[0] == 'S') {
       addr = strstr(buf, ch);
       length = getInt(buf + 1, addr - buf - 1);
-      cout << "lengths1" << length << endl;
       buf = addr + 2;
       char *s1 = (char *)malloc(length + 1);
       memcpy(s1, buf, length);
@@ -186,7 +180,6 @@ void networkRead(list<client>::iterator iter) {
       char *s = (char *)malloc(length + 1);
       memcpy(s, buf, length);
       s[length] = '\0';
-      cout << s << endl;
       addr = strstr(buf, ch);
       buf = addr + 2;
       reply = redisGet(&(iter->server->data), s);
@@ -194,10 +187,7 @@ void networkRead(list<client>::iterator iter) {
     } else if (opt[0] == 'E') {
       addr = strstr(buf, ch);
       length = getInt(buf + 1, addr - buf - 1);
-      cout<<length<<endl;
-      cout<<buf<<endl;
       buf = addr + 2;
-      cout<<buf<<endl;
       char *s = (char *)malloc(length + 1);
       memcpy(s, buf, length);
       reply = redisExists(&(iter->server->data), s);
@@ -209,7 +199,6 @@ void networkRead(list<client>::iterator iter) {
       char *s = (char *)malloc(length + 1);
       memcpy(s, buf, length);
       s[length] = '\0';
-      cout << s << endl;
       addr = strstr(buf, ch);
       buf = addr + 2;
       reply = redisDel(&(iter->server->data), s);
